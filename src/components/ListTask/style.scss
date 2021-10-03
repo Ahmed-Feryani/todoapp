@@ -1,0 +1,35 @@
+.list-task {
+  margin-top: 10rem;
+  &__list {
+    width: 60rem;
+    max-height: 50rem;
+    overflow-y: auto;
+  }
+  &__item {
+    padding: 1rem;
+    background: rgba(#d27519, 0.5);
+    border-radius: 5px;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  &__btn {
+    width: 10rem;
+    height: 4rem;
+  }
+  &__filter {
+    width: 20rem;
+    background: #fff;
+
+    border-radius: 4px;
+    .MuiInputLabel-shrink {
+      font-size: 1.5rem;
+    }
+  }
+}
